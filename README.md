@@ -32,16 +32,16 @@ wget https://ghproxy.com/https://raw.githubusercontent.com/ONKK/aaBT/main/script
 - 直接安装V7.7.0的版本，之后的版本都会验证userInfo.json
 
 - aapanel升级后关闭首页强制广告和首页软件推荐
-搜索/www/server/panel/BTPanel/static/js/index.js
-setTimeout(function () { index.get_cloud_list() }, 800); 
-取消 // 注释.
-搜索product_recommend.init 函数，注释如下内容
-/*product_recommend.init(function(){
-  index.get_product_status(function(){
-    index.recommend_paid_version()
-  });
-  index.get_index_list();
-})*/
+搜索/www/server/panel/BTPanel/static/js/index.js  
+> setTimeout(function () { index.get_cloud_list() }, 800); 
+取消 // 注释  
+搜索product_recommend.init 函数，注释如下内容  
+> /*product_recommend.init(function(){
+>   index.get_product_status(function(){
+>     index.recommend_paid_version()
+>   });
+>   index.get_index_list();
+> })*/
 清除浏览器缓存或更换浏览器 重新访问登录aaPanel panel即可
 
 - 降级常见问题
