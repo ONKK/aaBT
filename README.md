@@ -18,11 +18,11 @@
 
 ##### 国外VPS
 ~~~
-wget https://raw.githubusercontent.com/ONKK/aaBT/main/script/aabt.sh  -O aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
+wget https://raw.githubusercontent.com/ONKK/aaBT/main/script/aabt.sh  -O aabt.sh && chmod +x aabt.sh && clear && ./aabt.sh
 ~~~
 ##### 国内VPS
 ~~~
-wget https://ghproxy.com/https://raw.githubusercontent.com/ONKK/aaBT/main/script/aabt.sh  -O aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
+wget https://ghproxy.com/https://raw.githubusercontent.com/ONKK/aaBT/main/script/aabt.sh  -O aabt.sh && chmod +x aabt.sh && clear && ./aabt.sh
 ~~~
 
 ### 更新说明
