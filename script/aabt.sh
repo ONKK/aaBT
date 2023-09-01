@@ -45,6 +45,8 @@ red "降级成功."
 rm /root/LinuxPanel_EN-6.8.23.zip /root/panel/ -rf
 sed -i "s|'admin', 'root', 'admin123', '123456'|'admin123', 'root', 'admin123', '123456'|" /www/server/panel/BTPanel/static/js/public.js && sed -i "s|'admin', 'root', 'admin123', '123456'|'admin123', 'root', 'admin123', '123456'|" /www/server/panel/BTPanel/static/js/public_backup.js
 red "允许修改用户名为admin"
+sed -i "s|cache_timeout|max_age|" /www/server/panel/BTPanel/__init__.py
+red "解决了降级后登录面板时无法显示验证码图片或无法下载文件"
 echo '/' > /www/server/panel/data/admin_path.pl && /etc/init.d/bt restart
 red "关闭安全入口"
 }
@@ -63,6 +65,8 @@ rm -f /www/server/panel/data/bind.pl
 red "屏蔽绑定成功."
 sed -i "s|'admin','root','admin123','123456'|'admin123','root','admin123','123456'|" /www/server/panel/BTPanel/static/js/public.js && sed -i "s|'admin', 'root', 'admin123', '123456'|'admin123', 'root', 'admin123', '123456'|" /www/server/panel/BTPanel/static/js/public_backup.js
 red "允许修改用户名为admin"
+sed -i "s|cache_timeout|max_age|" /www/server/panel/BTPanel/__init__.py
+red "解决了降级后登录面板时无法显示验证码图片或无法下载文件"
 echo '/' > /www/server/panel/data/admin_path.pl && /etc/init.d/bt restart
 red "关闭安全入口"
 }
